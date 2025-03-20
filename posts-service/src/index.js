@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const { ApolloServer } = require('@apollo/server');
 const { PubSub } = require('graphql-subscriptions');
 const { gql } = require('graphql-tag');
@@ -7,11 +6,9 @@ const { startStandaloneServer } = require('@apollo/server/standalone');
 
 const prisma = new PrismaClient();
 const pubsub = new PubSub();
-=======
 const { ApolloServer, gql } = require('apollo-server');
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
->>>>>>> 1d869a3eaea82a2d8033a88a30294423d58edfff
 
 // Define GraphQL schema
 const typeDefs = gql`
@@ -30,7 +27,6 @@ const typeDefs = gql`
 
   type Mutation {
     createPost(title: String!, content: String!, authorId: Int!): Post!
-<<<<<<< HEAD
   }
 
   type Subscription {
@@ -72,7 +68,6 @@ async function startServer() {
 }
 
 startServer();
-=======
     updatePost(id: Int!, title: String, content: String): Post!
     deletePost(id: Int!): Post!
   }
@@ -102,4 +97,3 @@ const server = new ApolloServer({ typeDefs, resolvers });
 server.listen(4002).then(({ url }) => {
   console.log(`Server running at ${url}`);
 });
->>>>>>> 1d869a3eaea82a2d8033a88a30294423d58edfff
