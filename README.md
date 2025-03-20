@@ -1,1 +1,5 @@
-# microservices
+1. What do database migrations do and why are they useful?
+Database migrations are a way to version-control and manage changes to a database schema over time. They allow you to modify the structure of the database (e.g., adding tables, columns, or changing data types) without losing existing data. They are useful because they ensure that database changes are applied consistently across all environments (development, staging, production), and they provide a record of schema changes that can be tracked and reverted if needed.
+
+2. How does GraphQL differ from REST for CRUD operations?
+GraphQL differs from REST in how it handles requests and responses. In REST, you often need to make multiple HTTP requests to retrieve or modify different resources, while in GraphQL, you can request multiple resources in a single query. For CRUD operations, REST typically uses different endpoints (e.g., GET, POST, PUT, DELETE for each resource), whereas GraphQL uses a single endpoint for all operations. GraphQL gives clients more flexibility, allowing them to request exactly the data they need and nothing more, which reduces over-fetching and under-fetching of data
