@@ -3,20 +3,30 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 1d869a3eaea82a2d8033a88a30294423d58edfff
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+<<<<<<< HEAD
     "@apollo/server": "^4.11.3",
     "@prisma/client": "^6.5.0",
     "apollo-server": "^3.13.0",
     "graphql": "^16.10.0",
     "graphql-subscriptions": "^3.0.0",
     "graphql-tag": "^2.12.6",
+=======
+    "@prisma/client": "^6.5.0",
+    "apollo-server": "^3.13.0",
+    "graphql": "^16.10.0",
+>>>>>>> 1d869a3eaea82a2d8033a88a30294423d58edfff
     "prisma": "^6.5.0",
     "punycode": "^2.3.1",
     "sqlite3": "^5.1.7"
